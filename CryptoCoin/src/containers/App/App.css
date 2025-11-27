@@ -31,9 +31,48 @@ body,
   pointer-events: none;
 }
 
-input {
-  background-color: rgba(0, 0, 0, 0.93);
+/* Glassmorphism elegante */
+.glass-card {
+  background: rgba(255, 255, 255, 0.001);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25); */
 }
 
-input:hover {
+/* Inputs com borda luminosa */
+.form-control {
+  background-color: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.form-control:focus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-color: #fff;
+  box-shadow: 0 0 20px #fff;
+}
+
+/* Botão com hover animado */
+.btn {
+  transition: all 0.25s ease-in-out;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 14px rgba(244, 244, 244, 0.65);
+}
+
+.form-check-input {
+  background-color: #111a2800;
+  border-color: #ffffff9b;
+}
+/* Checkbox com estilo mais suave */
+.form-check-input:checked {
+  background-color: #111a2800;
+  border-color: #ffffff9b;
+  box-shadow: 0 0 6px rgba(13, 109, 253, 0);
 }
